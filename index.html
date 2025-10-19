@@ -14,6 +14,10 @@
         <option value="default">&lt;Select a Scribe&gt;</option>
     </select>
     <p><br></p>
+    <label for="openaiKey">OpenAI API key:</label>
+    <input type="password" id="openaiKey" name="openaiKey" placeholder="sk-..." autocomplete="off" />
+    <p class="statusHint">Your key is stored locally in your browser.</p>
+    <p><br></p>
     <label for="languageSelectorDiv">Select a language to translate to:</label>
     <div name="languageSelectorDiv" id="languageSelectorDiv" class="languageSelectorDiv">
         <select name="detectedLanguage" id="detectedLanguage">
@@ -192,7 +196,8 @@
     </div>
     <p><br></p>
     <button name="translateButton" id="translateButton" class="translateButton">Translate!</button>
+    <p id="statusMessage" class="statusMessage"></p>
 
-    <script src="scripts/contentScripts.js"></script>
+    <script src="scripts/popup.js"></script>
   </body>
 </html>

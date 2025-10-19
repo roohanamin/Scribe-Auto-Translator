@@ -4,12 +4,15 @@
     "version": "1.0",
     "manifest_version": 3,
     "permissions": [
-        "activeTab", 
+        "activeTab",
         "contextMenus",
-        "tabs"
+        "tabs",
+        "scripting",
+        "storage"
     ],
     "host_permissions": [
-        "https://scribehow.com/*"
+        "https://scribehow.com/*",
+        "https://api.openai.com/*"
     ],
     "action": {
         "default_icon": "assets/favicon2.png",
