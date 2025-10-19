@@ -1,0 +1,30 @@
+{
+    "name": "Scribe Auto-Translator",
+    "description": "Generate Scribe documents in other languages with the press of a button.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab", 
+        "contextMenus",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://scribehow.com/*"
+    ],
+    "action": {
+        "default_icon": "assets/favicon2.png",
+        "default_title": "Scribe Auto-Translator",
+        "default_popup": "index.html"
+    },
+    "background": {
+        "service_worker": "scripts/service-worker.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://scribehow.com/*", "https://scribehow.com/viewer/*"],
+            "js": ["scripts/contentScript.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
