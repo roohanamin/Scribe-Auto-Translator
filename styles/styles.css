@@ -1,0 +1,97 @@
+body {
+  min-width: 320px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 16px;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+select,
+input[type="password"],
+button {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #0f172a;
+}
+
+select:focus,
+input[type="password"]:focus,
+button:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+button.translateButton {
+  margin-top: 12px;
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+
+button.translateButton:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+button.translateButton:disabled {
+  background-color: #94a3b8;
+  border-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  min-height: 20px;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.statusMessage--error {
+  color: #b91c1c;
+}
+
+.statusMessage--info {
+  color: #047857;
+}
+
+.statusHint {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #64748b;
+}
+
+.scribe-auto-translator-duplicate {
+  border: 2px dashed rgba(37, 99, 235, 0.4);
+  border-radius: 12px;
+  padding: 16px;
+  background-color: rgba(191, 219, 254, 0.25);
+  margin-top: 24px;
+}
+
+.scribe-auto-translator-body {
+  margin-top: 12px;
+}
+
+.scribe-auto-translator-content {
+  white-space: pre-wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
